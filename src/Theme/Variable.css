@@ -1,0 +1,18 @@
+:root {
+  /* Primary colors */
+  --primary-orange: #FF9500;
+  --primary-orange-light: #FF9E0E;
+  --primary-teal: #00BEAE;
+  --primary-blue-dark: #191659;
+  --primary-gray-dark: #333931;
+  --primary-white: #FFFFFF;
+
+  /* Secondary colors */
+  --secondary-red: #FF3B30;
+  --secondary-pink: #FF375F;
+  --secondary-purple: #AF52DE;
+  --secondary-indigo: #5E5CE6;
+  --secondary-green: #34C759;
+  --secondary-blue: #007AFF;
+  --secondary-violet: #5856D6;
+}

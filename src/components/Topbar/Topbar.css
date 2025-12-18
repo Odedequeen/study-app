@@ -1,0 +1,23 @@
+.topbar {
+  background: #13203f;
+  color: #fff;
+  font-size: 14px;
+}
+.topbar-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar .icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.topbar .text { vertical-align: middle; }
+.topbar-left { opacity: 0.95 }
+.topbar-right { display:flex; gap:12px; align-items:center }
+.topbar .login { color: #ff9b6b }

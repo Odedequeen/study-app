@@ -4,7 +4,7 @@ import locationicon from "../../assets/Icons/location.svg";
 import usericon from "../../assets/Icons/head.svg";
 import linkicon from "../../assets/Icons/lindein.svg";
 import FacebookIcon from "../../assets/Icons/Facebook.svg";
-import TwitterIcon from "../../assets/Icons/twitter.svg";
+import TwitterIcon from "../../assets/Icons/Twitter.svg";
 import kypeIcon from "../../assets/Icons/skype.svg";
 
 export default function Topbar() {

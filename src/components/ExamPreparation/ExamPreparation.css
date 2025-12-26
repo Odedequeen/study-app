@@ -1,0 +1,61 @@
+.exam-prep {
+  padding: 56px 16px;
+  text-align: center;
+}
+.prep-header .subtle {
+  color: #6aa8a0;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.prep-header h2 {
+  margin: 0 0 24px 0;
+  font-size: 26px;
+}
+.prep-tiles {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.prep-tile {
+  width: 420px;
+  min-height: 160px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.prep-tile.dark { background: linear-gradient(135deg,#052f3a,#04313a); color: #fff; }
+.prep-tile.light { background: #1fc0a0; color: #fff; }
+.tile-content h3 { margin: 0 0 8px 0; }
+.tile-content p { margin: 0 0 12px 0; color: rgba(255,255,255,0.9); }
+.tile-btn { background: rgba(255,255,255,0.14); color: #fff; border: none; padding: 8px 14px; border-radius: 20px; cursor: pointer; }
+
+/* New: wrapper for tile + icon to place icon to the right */
+.prep-tile-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.prep-tile-with-icon .prep-tile {
+  flex: 1 1 320px;
+  width: auto;
+}
+
+.prep-icon {
+  width: 96px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 720px) {
+  .prep-tile-with-icon {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .prep-icon {
+    width: 80px;
+    margin: 0 auto 8px auto;
+  }
+}

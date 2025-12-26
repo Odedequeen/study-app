@@ -1,16 +1,18 @@
-import './CheckoutSection.css'
-import courseImg1 from '../../assets/Images/Gallary/Gallary1.svg'
-import courseImg2 from '../../assets/Images/Gallary/Gallary2.svg'
-import courseImg3 from '../../assets/Images/Gallary/Gallary3.png'
+import "./CheckoutSection.css";
 
-export default function CheckoutSection(){
+// import AnyStitIcon from "../../assets/Images/AnyStit.svg";
+// import AnyEaxm2Icon from "../../assets/Images/AnyEaxm2.svg";
+// import AnyDataIcon from "../../assets/Images/AnyData.svg";
+
+export default function CheckoutSection() {
   return (
     <section id="checkout-section" className="checkout-section">
       <div className="checkout-inner">
         <div className="checkout-header">
           <div className="checkout-head-left">
             <div className="eyebrow">TOP POPULAR COURSE</div>
-            <h2 className="checkout-title">Check Out Educate Features
+            <h2 className="checkout-title">
+              Check Out Educate Features
               <span className="checkout-sub"> Win Any Exam</span>
             </h2>
           </div>
@@ -20,8 +22,17 @@ export default function CheckoutSection(){
           </div>
         </div>
 
-        <div className="cards-row">
-          {[{img:courseImg1},{img:courseImg2},{img:courseImg3}].map((c, i) => (
+        {/* <div className="cards-row">
+          {[
+            <img src={AnyEaxm2Icon} alt="icon" className="Checkout-icon" />,
+            <img src={AnyDataIcon} alt="icon" className="Checkout-icon" />,
+            <img src={AnyStitIcon} alt="icon" className="Checkout-icon" />,
+
+            // { img: AnyEaxm2Icon },
+            // { img: AnyDataIcon },
+            // { img: AnyStitIcon },
+          ]}
+          {cards.map((c, i) => (
             <article className="course-card" key={i}>
               <div className="card-media">
                 <span className="tag">Development</span>
@@ -29,8 +40,12 @@ export default function CheckoutSection(){
               </div>
 
               <div className="card-body">
-                <div className="rating">★★★★★ <span className="rate">(4.7)</span></div>
-                <h3 className="card-title">It Statistics Data Science And Business Analysis</h3>
+                <div className="rating">
+                  ★★★★★ <span className="rate">(4.7)</span>
+                </div>
+                <h3 className="card-title">
+                  It Statistics Data Science And Business Analysis
+                </h3>
 
                 <ul className="meta">
                   <li>📘 Lesson 10</li>
@@ -40,13 +55,15 @@ export default function CheckoutSection(){
 
                 <div className="card-footer">
                   <div className="author">By Angela in Development</div>
-                  <div className="price"><strong>$60</strong> <span className="old">$120</span></div>
+                  <div className="price">
+                    <strong>$60</strong> <span className="old">$120</span>
+                  </div>
                 </div>
               </div>
             </article>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
-  )
+  );
 }

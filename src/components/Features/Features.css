@@ -1,0 +1,111 @@
+.features-section {
+    padding: 48px 16px;
+    text-align: center;
+    background-color: #f8fafb;
+    position: relative;
+}
+
+.features-header .subtle {
+    color: #6aa8a0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.features-header .subtle .heading-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin: 0 8px;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.features-header .subtle .subtle-text {
+    vertical-align: middle;
+}
+
+.features-header h2 {
+    margin: 0 0 28px 0;
+    font-size: 28px;
+    color: #132c33;
+}
+
+.features-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    width: 240px;
+    box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
+    text-align: left;
+}
+
+.feature-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e6f6f2;
+    font-size: 22px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.feature-icon-img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    display: block;
+}
+
+.feature-icon-svg,
+.feature-icon svg {
+    width: 60%;
+    height: 60%;
+    display: block;
+}
+
+.feature-icon-svg svg {
+    fill: currentColor;
+}
+
+.feature-icon {
+    color: #1fb39a;
+}
+
+.feature-icon-symbol {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-title {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #17323a;
+}
+
+.feature-text {
+    margin: 0 0 14px 0;
+    color: #6b7b80;
+    font-size: 13px;
+}
+
+.feature-btn {
+    background: #1fb39a;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}

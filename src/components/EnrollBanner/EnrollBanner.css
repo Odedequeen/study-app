@@ -1,0 +1,51 @@
+.enroll-banner {
+  background: linear-gradient(90deg, rgba(5,35,49,0.8), rgba(5,35,49,0.6)), url('../../assets/Images/Gallary/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 56px 16px;
+  color: #fff;
+}
+.enroll-overlay {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.enroll-content .eyebrow {
+  color: #ffb0a0;
+  margin-bottom: 12px;
+}
+.enroll-title {
+  font-size: 34px;
+  margin: 0 0 18px 0;
+}
+.enroll-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.primary {
+  background: #1fb39a;
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.play {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.play-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.watch {
+  text-transform: lowercase;
+  font-size: 13px;
+  color: #fff;
+}

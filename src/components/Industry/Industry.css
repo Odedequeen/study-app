@@ -1,0 +1,56 @@
+@import "../../Theme/Variable.css";
+
+.industry{
+  padding: 72px 24px;
+  background: var(--white, #fff);
+}
+
+.industry-container{
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.industry-left{ flex: 1.05; }
+.industry-right{ flex: 0.95; display:flex; justify-content:center; }
+
+.industry-badge{
+  display:inline-block; color:var(--primary-teal); font-weight:700; font-size:13px; letter-spacing:1px;
+}
+
+.industry-title{
+  margin:18px 0; font-size:40px; line-height:1.05; color:var(--primary-blue-dark);
+}
+
+.industry-desc{ color:#6b6b6b; margin-bottom:24px; max-width:520px; }
+
+.industry-stats{ list-style:none; padding:0; margin:0; display:block; }
+.industry-stats li{ margin-bottom:22px; }
+
+.stat-label{ color: #123; font-weight:700; margin-bottom:8px; }
+.stat-bar{ height:14px; background:#d6efe8; border-radius:10px; position:relative; overflow:visible; }
+.stat-fill{ height:100%; background:var(--primary-teal); border-radius:10px; }
+.stat-badge{ position:absolute; right: -36px; top:-8px; background:var(--primary-teal); color:#fff; padding:6px 8px; border-radius:6px; font-weight:700; font-size:12px; }
+
+.industry-photo-frame{ position:relative; width:380px; height:480px; display:flex; align-items:center; justify-content:center; }
+.photo-accent{ position:absolute; right: -14px; bottom:-14px; width:330px; height:440px; border:10px solid #ff5746; box-sizing:border-box; transform:translate(10px, -10px); }
+.industry-photo{ width:340px; height:440px; object-fit:cover; border-radius:6px; box-shadow:0 8px 30px rgba(0,0,0,0.15); position:relative; z-index:2; }
+
+@media (max-width: 980px){
+  .industry-container{ flex-direction:column; align-items:flex-start; }
+  .industry-photo-frame{ width:100%; height:auto; }
+  .industry-photo{ width:100%; height:320px; }
+  .photo-accent{ display:none; }
+
+  /* Move stat badge inside bar on small screens to avoid overflow */
+  .stat-badge{
+    position:static;
+    display:inline-block;
+    float:right;
+    margin-left:8px;
+    top: auto;
+    right: auto;
+  }
+}

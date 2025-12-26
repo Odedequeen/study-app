@@ -2,7 +2,9 @@
 
 .hero {
   padding: 48px 24px;
-  background: linear-gradient(90deg, rgba(249,242,242,0.6), rgba(235,253,250,0.6));
+  background: linear-gradient(90deg, rgba(249, 242, 242, 0.6), rgba(235, 253, 250, 0.6));
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-container {
@@ -45,7 +47,7 @@
   background: white;
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(17,34,51,0.06);
+  box-shadow: 0 6px 18px rgba(17, 34, 51, 0.06);
 }
 
 .hero-search-input {
@@ -73,36 +75,99 @@
 
 .hero-illustration {
   position: relative;
-  width: 360px;
-  height: 320px;
+  width: 280px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 12px;
+
+}
+
+.illustration-icon {
+  width: 140px;
+  height: 140px;
+  z-index: 1;
+  position: absolute;
+  left: 40px;
+  top: 0px;
+  background-color: #cf9c10;
+}
+.success58k-icon {
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  position: absolute;
+  right: 40px;
+  bottom: 0%;
+  background-color: #117a63;
 }
 
 .card {
   position: absolute;
   border-radius: 28px;
-  box-shadow: 0 8px 28px rgba(17,34,51,0.08);
+  box-shadow: 0 8px 28px rgba(17, 34, 51, 0.08);
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+
 }
 
 .small-card {
-  width: 150px;
-  height: 240px;
-  left: 8px;
-  top: 60px;
-  background: linear-gradient(180deg,#f6e7ff,#ffd6f0);
+  width: 110px;
+  height: 180px;
+  left: 12px;
+  top: 36px;
+  background: linear-gradient(180deg, #f6e7ff, #ffd6f0);
+
+
 }
 
 .large-card {
-  width: 220px;
-  height: 300px;
-  right: 0;
-  top: 0;
-  background: linear-gradient(180deg,#d9f7f0,#e6fff6);
+  width: 170px;
+  height: 220px;
+  right: 12px;
+  top: 12px;
+  background: linear-gradient(180deg, #d9f7f0, #e6fff6);
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 28px;
 }
 
 @media (max-width: 900px) {
-  .hero-container { flex-direction: column; align-items: flex-start; }
-  .hero-title { font-size: 34px; }
-  .hero-illustration { width: 260px; height: 220px; }
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-illustration {
+    width: 260px;
+    height: 220px;
+  }
+  .small-card,
+  .large-card {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  .card-img {
+    height: 180px;
+    object-fit: contain;
+  }
+
 }

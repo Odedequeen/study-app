@@ -1,0 +1,6 @@
+.top-ticker{width:100%;display:block}
+.top-ticker svg{display:block;width:100%;height:56px}
+
+@media(min-width:1200px){
+  .top-ticker svg{height:72px}
+}

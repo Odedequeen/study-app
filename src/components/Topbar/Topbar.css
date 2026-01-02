@@ -1,23 +1,61 @@
 .topbar {
-  background: #13203f;
-  color: #fff;
-  font-size: 14px;
+  background: var(--primary-blue-dark);
+  color: var(--primary-white);
+  font-size: 13px;
+  padding: 8px 0;
 }
+
 .topbar-inner {
-  max-width: 1180px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 8px 16px;
+  padding: 0 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.topbar .icon {
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
-  margin-right: 8px;
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.topbar .text { vertical-align: middle; }
-.topbar-left { opacity: 0.95 }
-.topbar-right { display:flex; gap:12px; align-items:center }
-.topbar .login { color: #ff9b6b }
+
+.topbar-item {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.topbar-separator {
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0 4px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar-link {
+  color: var(--primary-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.topbar-link:hover {
+  color: var(--primary-teal);
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    font-size: 11px;
+  }
+  
+  .topbar-left {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .topbar-separator {
+    display: none;
+  }
+}

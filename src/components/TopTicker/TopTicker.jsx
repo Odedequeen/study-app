@@ -5,7 +5,6 @@ import "./TopTicker.css";
 export default function TopTicker() {
   return (
     <div className="top-ticker">
-      Inline SVG banner provided by user
       <svg
         viewBox="0 0 1920 100"
         preserveAspectRatio="none"

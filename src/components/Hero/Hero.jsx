@@ -5,23 +5,25 @@ import sectionmanicon from "../../assets/Images/sectionman.svg";
 import student2kicon from "../../assets/Images/student2k.svg";
 import success58kicon from "../../assets/Images/succcess58k.svg";
 
+/**
+ * Hero Section Component
+ * Main hero section with title, search bar, and student images
+ */
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-container">
         <div className="hero-left">
-          <span className="hero-badge">Learn & Get Certificates</span>
+          <p className="hero-author">By Victoria Lee, CEO, Edunity</p>
           <h1 className="hero-title">
-            Free Online Courses
-            <br />
-            With Certificates & Diplomas
+            Free Online Courses With Certificates & Diplomas
           </h1>
-          <p className="hero-sub">25 Million Learners. 15 Years. 100%.</p>
 
           <div className="hero-search">
             <input
               className="hero-search-input"
-              placeholder="What do you want to learn today?"
+              placeholder="What do you want to learn?"
+              type="text"
             />
             <button className="hero-search-btn" aria-label="search">
               <img
@@ -35,26 +37,24 @@ export default function Hero() {
 
         <div className="hero-right">
           <div className="hero-illustration">
-            <img
-              src={student2kicon}
-              alt="student2k Icon"
-              className="illustration-icon"
-            />
-            <div className="card small-card">
+            <div className="hero-card hero-card-small">
               <img
                 src={sectiongirlicon}
-                alt="Sectiongirl Icon"
-                className="card-img"
+                alt="Student"
+                className="hero-card-img"
               />
             </div>
-            <div className="card large-card">
-              <img src={sectionmanicon} alt="Sectionman-Icon" className="card-img" />
+            <div className="hero-card hero-card-large">
+              <img src={sectionmanicon} alt="Student" className="hero-card-img" />
             </div>
-            <img
-              src={success58kicon}
-              alt="Success58k Icon"
-              className="success58k-icon"
-            />
+            <div className="hero-badge hero-badge-students">
+              <span className="hero-badge-number">2k+</span>
+              <span className="hero-badge-text">Students</span>
+            </div>
+            <div className="hero-badge hero-badge-reviews">
+              <span className="hero-badge-number">5.8k</span>
+              <span className="hero-badge-text">Reviews</span>
+            </div>
           </div>
         </div>
       </div>

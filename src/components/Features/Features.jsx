@@ -1,7 +1,7 @@
 import React from "react";
 import "./Features.css";
 // Import SVGs (prefer SVGR/react component if available) using exact filenames
-import Checkout1Icon from "../../assets/Icons/Checkout1.svg";
+import Checkout1Icon from "../../assets/Icons/Checkout1.svg"
 import Checkout2Icon from "../../assets/Icons/Checkout2.svg";
 import Checkout3Icon from "../../assets/Icons/Checkout3.svg";
 import Checkout4Icon from "../../assets/Icons/Checkout4.svg";
@@ -57,10 +57,15 @@ export default function Features() {
       text: "Hands-on exercises and projects to reinforce concepts.",
     },
     {
-      icon: Checkout4Icon,
+  icon: <img src={performanceIcon} alt="Performance Tracking" />,
+  title: "Performance Tracking",
+  text: "Track progress and improve with personalized feedback.",
+    }
+    {
+        icon: Checkout4Icon,
       title: "Performance Tracking",
-      text: "Track progress and improve with personalized feedback.",
-    },
+       text: "Track progress and improve with personalized feedback.",
+    }
   ];
 
   return (

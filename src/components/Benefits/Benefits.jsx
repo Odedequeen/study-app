@@ -35,7 +35,8 @@ export default function Benefits() {
         
         <div className="benefits-right">
           <SectionTitle 
-            title="Benefit From Our Online Learning Expertise Earn Professional"
+            title="Benefit From Our Online Learning Expertise Earn
+             Professional"
             align="left"
           />
           

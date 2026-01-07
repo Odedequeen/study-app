@@ -12,14 +12,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
-    repeating-linear-gradient(
-      45deg,
+  background-image:
+    repeating-linear-gradient(45deg,
       transparent,
       transparent 10px,
       rgba(255, 255, 255, 0.03) 10px,
-      rgba(255, 255, 255, 0.03) 20px
-    );
+      rgba(255, 255, 255, 0.03) 20px);
 }
 
 .expert-instructors-container {
@@ -36,7 +34,7 @@
 }
 
 .instructor-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgb(14, 42, 70);
   padding: 32px 24px;
   text-align: center;
   position: relative;
@@ -46,10 +44,10 @@
 .instructor-image {
   width: 150px;
   height: 150px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
+  margin: 0 auto;
+  border-radius: 0%;
   overflow: hidden;
-  border: 4px solid var(--primary-teal);
+
 }
 
 .instructor-image img {
@@ -61,8 +59,9 @@
 .instructor-name {
   font-size: 20px;
   font-weight: 700;
-  color: var(--primary-blue-dark);
-  margin: 0 0 8px 0;
+  color: var(--primary-white);
+  margin: 0 0 8px 10px;
+  padding: 15px;
 }
 
 .instructor-title {
@@ -73,7 +72,7 @@
 
 .instructor-badge {
   position: absolute;
-  bottom: -12px;
+  top: 160px;
   left: 50%;
   transform: translateX(-50%);
   width: 32px;
@@ -91,6 +90,7 @@
   font-size: 16px;
   font-weight: 700;
 }
+
 
 @media (max-width: 768px) {
   .expert-instructors-grid {

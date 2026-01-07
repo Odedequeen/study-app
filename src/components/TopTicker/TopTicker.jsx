@@ -42,6 +42,14 @@ export default function TopTicker() {
             transform="translate(718.72 26.5)"
             fill="url(#pattern1_2_830)"
           />
+
+
+
+
+
+
+
+          
           {/* <div className="ticker-text">
 
             <img

@@ -11,26 +11,27 @@ export default function ExpertInstructors() {
     {
       id: 1,
       name: 'Nathan Paul',
-      title: 'Trainer',
-      image: '/src/assets/Images/instructor/groupexpert.svg'
+      title: 'Teacher',
+      image: '/src/assets/Images/instructor/Instructor1.svg'
     },
     {
       id: 2,
       name: 'Ethan Boyd',
-      title: 'Trainer',
-      image: '/src/assets/Images/instructor/groupexpert.svg'
+      title: 'Teacher',
+      image: '/src/assets/Images/instructor/Instructor2.svg'
     },
     {
       id: 3,
       name: 'John Kelvin',
-      title: 'Trainer',
-      image: '/src/assets/Images/instructor/groupexpert.svg'
+      title: 'Teacher',
+
+      image: '/src/assets/Images/instructor/Instructor3.svg'
     },
     {
       id: 4,
       name: 'Jenny Deley',
-      title: 'Trainer',
-      image: '/src/assets/Images/instructor/groupexpert.svg'
+      title: 'Teacher',
+      image: '/src/assets/Images/instructor/Instructo4.svg'
     }
   ];
 
